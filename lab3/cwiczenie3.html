@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Produkty z API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Produkty</h2>
+
+  <input type="text" id="filterInput" placeholder="Filtruj po tytule lub opisie">
+  <select id="sortSelect">
+    <option value="original">Oryginalna kolejność</option>
+    <option value="asc">Rosnąco</option>
+    <option value="desc">Malejąco</option>
+  </select>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Zdjęcie</th>
+        <th>Tytuł</th>
+        <th>Opis</th>
+      </tr>
+    </thead>
+    <tbody id="productsTableBody">
+    </tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
