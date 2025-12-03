@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Flappy Bird — demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <div id="ui">
+    <div id="startScreen" class="overlay">
+  <img id="startMessageImg" class="overlay-img" src="../assets/UI/message.png" alt="Start message" />
+    </div>
+
+    <div id="gameOverScreen" class="overlay hidden">
+  <img id="gameOverImg" class="gameover-img" src="../assets/UI/gameover.png" alt="Game Over" />
+      <div id="scores">
+        <p>Wynik: <strong><span id="lastScore">0</span></strong></p>
+        <p>Rekordy:</p>
+        <ol id="leaderboard"></ol>
+      </div>
+      <button id="retryBtn">Zagraj ponownie</button>
+    </div>
+
+    <div id="congratsScreen" class="overlay hidden">
+      <h2>Gratulacje! Nowy rekord!</h2>
+      <button id="congratsBtn">Dalej</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
